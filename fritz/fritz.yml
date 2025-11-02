@@ -1,0 +1,8 @@
+exporter_port: 18000
+log_level: INFO
+
+devices:
+    - name: Fritz!Box
+      hostname: 192.168.0.1
+      username: grafana
+      password: prometheus
