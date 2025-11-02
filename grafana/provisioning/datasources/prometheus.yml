@@ -1,0 +1,15 @@
+apiVersion: 1
+
+datasources:
+  - name: Prometheus
+    type: prometheus
+    access: proxy
+    url: http://prometheus:18003
+    isDefault: true
+    editable: false
+    jsonData:
+      disablePromqlHints: true          # disable PromQL info/warning messages
+      disableMetricsLookup: false       # skip heavy metric lookup in query editor
+      incrementalQuerying: true         # smoother long-range queries
+      httpMethod: POST                  # more efficient for large queries
+      exemplarTraceIdDestinations: []   # optional: disable trace links
