@@ -1,0 +1,8 @@
+exporter_port: 18000
+log_level: INFO
+
+devices:
+    - name: Fritz!Box
+      hostname: 192.0.2.1
+      username: CHANGE-ME
+      password: CHANGE-ME
